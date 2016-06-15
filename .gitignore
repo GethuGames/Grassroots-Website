@@ -1,0 +1,9 @@
+vendor/
+
+*.swp
+*.swo
+*~
+
+.DS_Store
+Thumbs.db
+npm-debug.log
