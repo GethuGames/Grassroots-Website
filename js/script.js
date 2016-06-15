@@ -51,6 +51,15 @@ $(document).ready(function() {
 			  singleItem:true
 		});
 
+		// OwlCarousel N3
+		$("#owl-demo-2").owlCarousel({
+			  navigation : false, // Show next and prev buttons
+			  slideSpeed : 300,
+			  paginationSpeed : 400,
+			  singleItem:true
+		});
+
+
 		//SmothScroll
 		$('a[href*=#]').click(function() {
 			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
