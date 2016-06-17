@@ -1,0 +1,77 @@
+/**
+ * Grid Style - Start
+ */
+.logoGrid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logoGrid a {
+  display: inline-block;
+  margin-bottom: 8px;
+  width: calc(50% - 4px);
+  margin-right: 8px;
+  text-decoration: none;
+  color: black;
+}
+
+.logoGrid a:nth-of-type(2n) {
+  margin-right: 0;
+}
+
+@media screen and (min-width: 50em) {
+  .logoGrid a {
+    width: calc(25% - 6px);
+  }
+  
+  .logoGrid a:nth-of-type(2n) {
+    margin-right: 8px;
+  }
+  
+  .logoGrid a:nth-of-type(4n) {
+    margin-right: 0;
+  }
+}
+
+.logoGrid a:hover img {
+  transform: scale(1.15);
+}
+
+.logoGrid figure {
+  margin: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.logoGrid figcaption {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.logoGrid img {
+  border: none;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  background: #ccc;
+  transition: transform .2s ease-in-out;
+  text-align: center;
+  margin: auto;
+}
+
+.logoGrid .p a {
+  display: inline;
+  font-size: 13px;
+  margin: 0;
+  text-decoration: underline;
+  color: blue;
+}
+
+.logoGrid .p {
+  text-align: center;
+  font-size: 13px;
+  padding-top: 100px;
+}
+/**
+ * Grid Style - End
+ */
