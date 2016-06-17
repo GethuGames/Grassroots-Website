@@ -14,6 +14,93 @@ $(window).load(function() {
 })
 
 $(document).ready(function() {
+
+		$('#volunteerSubmit').click(function() {
+
+			var validemail 			= 	/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+			var emailValue 			=	$("#volunteerEmail").val();
+            console.log(emailValue);
+
+			//check if the given email address is valid or not
+			if(emailValue.match(validemail) && emailValue!=""){
+
+				var utilityURL      =   "http://www.grassrootsapp.in/volunteerRegistration.php";
+				var data            =   {'email': emailValue};
+
+				$.ajax({
+					type			:	"POST",
+					url 			:	utilityURL,	
+                    data            :   data
+				}).done(function() {
+                    console.log('Volunteer Registered');
+                    $('#volunteerSubmit').fadeOut(200);
+                    $('#volunteerControl').fadeOut(200);
+                    $('#volunteerRegisterSuccess').fadeIn(200);
+				}).fail(function() {
+                    console.log('Volunteer Registration Fail');
+                    $('#volunteerSubmit').fadeOut(200);
+                    $('#volunteerControl').fadeOut(200);
+                    $('#volunteerRegisterFailure').text('Network Issue');
+                    $('#volunteerRegisterFailure').fadeIn(200);
+                });
+
+			} else {
+			
+                $('#volunteerRegisterFailure').text('Enter valid Mail');
+                $('#volunteerRegisterFailure').fadeIn(200).delay(2000).fadeOut(200);
+			}
+		});
+
+		$('#ngoSubmit').click(function() {
+
+			var validemail 			= 	/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+			var emailValue 			=	$("#ngoEmail").val();
+			var nameValue 			=	$("#ngoName").val();
+			var mobileValue 		=	$("#ngoMobile").val();
+            console.log(emailValue);
+
+			//check if the given email address is valid or not
+			if(emailValue.match(validemail) && emailValue!="" && nameValue!="" && mobileValue!=""){
+
+				var utilityURL      =   "http://www.grassrootsapp.in/ngoRegistration.php";
+				var data            =   {'email': emailValue, 'name': nameValue, 'mobile': mobileValue};
+
+				$.ajax({
+					type			:	"POST",
+					url 			:	utilityURL,	
+                    data            :   data
+				}).done(function() {
+                    console.log('NGO Registered');
+                    $('#ngoSubmit').fadeOut(200);
+                    $('#ngoNameControl').fadeOut(200);
+                    $('#ngoMailControl').fadeOut(200);
+                    $('#ngoMobileControl').fadeOut(200);
+                    $('#ngoRegisterSuccess').fadeIn(200);
+				}).fail(function() {
+                    console.log('NGO Registration Fail');
+                    $('#ngoSubmit').fadeOut(200);
+                    $('#ngoNameControl').fadeOut(200);
+                    $('#ngoMailControl').fadeOut(200);
+                    $('#ngoMobileControl').fadeOut(200);
+                    $('#ngoRegisterFailure').fadeIn(200);
+                    $('#ngoRegisterFailure').text('Network Issue');
+                });
+
+            } else if (nameValue === ""){
+                $('#ngoRegisterFailure').text('Please enter name of the NGO');
+                $('#ngoRegisterFailure').fadeIn(200).delay(2000).fadeOut(200);
+            } else if (emailValue === ""){
+                $('#ngoRegisterFailure').text('Please enter mail');
+                $('#ngoRegisterFailure').fadeIn(200).delay(2000).fadeOut(200);
+            } else if (!emailValue.match(validemail)){
+                $('#ngoRegisterFailure').text('Please enter valid mail');
+                $('#ngoRegisterFailure').fadeIn(200).delay(2000).fadeOut(200);
+            } else if (mobileValue === ""){
+                $('#ngoRegisterFailure').text('Please enter mobile number');
+                $('#ngoRegisterFailure').fadeIn(200).delay(2000).fadeOut(200);
+			}
+		});
+
 		//animated logo
 		$(".navbar-brand").hover(function () {
 			$(this).toggleClass("animated shake");
