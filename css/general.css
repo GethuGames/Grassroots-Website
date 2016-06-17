@@ -1070,7 +1070,12 @@ color: #ECEBEB;
 			text-align: center;
 			background-color: #34495e;
 		}
-		
+
+        .h1_home{
+            font-size: 50px;
+            letter-spacing: 4px;
+        }
+
 		h1, .h1 {
 			font-size: 50px;
 		}
@@ -1081,7 +1086,6 @@ color: #ECEBEB;
 		#gallery1{display:none}
 		
 		.button_down {display:none}
-		
 		
 	}
 
