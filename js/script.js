@@ -36,6 +36,15 @@ $(document).ready(function() {
 
 
 		// OwlCarousel N1
+		$("#owl-demo-ngo").owlCarousel({
+			autoPlay: 3000,
+			items : 4,
+			itemsDesktop : [1199,3],
+			itemsDesktopSmall : [979,3]
+		});
+
+
+		// OwlCarousel N1
 		$("#owl-demo").owlCarousel({
 			autoPlay: 3000,
 			items : 4,

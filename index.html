@@ -23,6 +23,7 @@
 
     <!-- Custom CSS-->
     <link href="css/general.css" rel="stylesheet">
+    <link href="css/gg.css" rel="stylesheet">
 
     <!-- Owl-Carousel -->
     <link href="css/custom.css" rel="stylesheet">
@@ -61,16 +62,18 @@
             <h1 class="h1_home wow fadeIn" data-wow-delay="0.4s">Grassroots</h1>
             <h3 class="h3_home wow fadeIn" data-wow-delay="0.6s">Transforming the world of Volunteering</h3>
             <ul class="list-inline intro-social-buttons">
-                <li><a href="#register" class="btn  btn-lg mybutton_cyano wow fadeIn" data-wow-delay="1.0s"><span class="network-name">Register</a>
+                <li>
+					<a href="#registration" class="btn  btn-lg mybutton_cyano wow fadeIn" data-wow-delay="1.0s"><span class="network-name">Register</span></a>
                 </li>
-                <li id="download" ><a href="#screen" class="btn  btn-lg mybutton_standard wow swing wow fadeIn" data-wow-delay="1.2s"><span class="network-name">App Screens</span></a>
+                <li>
+					<a href="#screen" class="btn  btn-lg mybutton_standard wow swing wow fadeIn" data-wow-delay="1.2s"><span class="network-name">App Screens</span></a>
                 </li>
             </ul>
         </div>    
         <!-- /.container -->
         <div class="col-xs-12 text-center abcen wow fadeIn">
             <div class="button_down "> 
-                <a class="imgcircle wow bounceInUp" data-wow-duration="1.5s"  href="#whatis"> <img class="img_scroll" src="img/icon/circle.png" alt=""> </a>
+                <a class="imgcircle wow bounceInUp" data-wow-duration="1.5s"  href="#screen"> <img class="img_scroll" src="img/icon/circle.png" alt=""> </a>
             </div>
         </div>
     </div>
@@ -92,9 +95,10 @@
                 <ul class="nav navbar-nav">
                     <li class="menuItem"><a href="#screen">App Screens</a></li>
                     <li class="menuItem"><a href="#whatis">What is?</a></li>
-                    <li class="menuItem"><a href="#useit">NGO Panel</a></li>
+                    <li class="menuItem"><a href="#ngoPanel">NGO Panel</a></li>
                     <li class="menuItem"><a href="#registration">Registration</a></li>
                     <li class="menuItem"><a href="#credits">Subscription</a></li>
+                    <li class="menuItem"><a href="#download">Download</a></li>
                     <li class="menuItem"><a href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -218,8 +222,8 @@
         </div>
     </div>
 
-    <!-- Use it -->
-    <div id ="useit" class="content-section-a">
+    <!-- NGO Panel -->
+    <div id ="ngoPanel" class="content-section-a">
 
         <div class="container">
 
@@ -368,7 +372,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="text-center white wow slideInLeft" data-wow-delay="0.4s">
+                    <div class="text-center white wow slideInLeft" data-wow-delay="0.2s">
                         <span id="volunteerCountElement">0</span> / 2500 Volunteers registered
                     </div>
                 </div>
@@ -390,7 +394,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="text-center white wow slideInRight" data-wow-delay="0.4s">
+                    <div class="text-center white wow slideInRight" data-wow-delay="0.2s">
                         <span id='ngoCountElement'>0</span> / 25 NGOs registered
                     </div>
                 </div>	
@@ -398,6 +402,45 @@
             </div>>
         </div>
     </div>	
+
+	<!-- NGOs -->
+	<div id="ngos" class="content-section-a">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-6 col-md-offset-3 text-center wrap_title">
+					<h2>Registered NGOs</h2>
+					<p class="lead" style="margin-top:0"></p>
+				</div>
+
+			</div>
+
+			<!-- https://www.sitepoint.com/using-modern-css-to-build-a-responsive-image-grid/ -->
+			<div class="row logoGrid">
+
+				<a href="">
+					<figure>
+						<img src="img/logo/logo-api.jpg" alt="">
+						<figcaption>Arappor Iyakkam</figcaption>
+					</figure>
+				</a>
+
+				<a href="">
+					<figure>
+						<img src="img/logo/logo-thozhan.png" alt="">
+						<figcaption>Thozhan</figcaption>
+					</figure>
+				</a>
+
+				<a href="">
+					<figure>
+						<img src="img/logo/logo-css.png" alt="">
+						<figcaption>Chennai Social Service</figcaption>
+					</figure>
+				</a>
+			</div>
+		</div>
+	</div>
 
     <!-- Credits -->
     <div id="credits" class="content-section-a">
@@ -409,7 +452,6 @@
                     <p class="lead" style="margin-top:0"></p>
                 </div>
 
-                <!--
                 <div class="col-sm-6  block wow bounceIn">
                     <div class="row">
                         <div class="col-md-4 box-icon rotate"> 
@@ -432,10 +474,8 @@
                         </div>
                     </div>
                 </div>
-                -->
             </div>
 
-            <!--
             <div class="row tworow">
                 <div class="col-sm-6  block wow bounceIn">
                     <div class="row">
@@ -460,19 +500,21 @@
                     </div>
                 </div>
             </div>
-            -->
         </div>
     </div>
 
     <!-- Banner Download -->
-    <div id="downloadlink" class="banner">
+    <div id="download" class="banner">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 text-center wrap_title">
                     <h2>Download App</h2>
                     <p class="lead" style="margin-top:0"></p>
+                    <p><a class="btn btn-embossed btn-primary" role="button">Launch on Oct 30</a> </p>
+<!--
                     <p><a class="btn btn-embossed btn-primary" href="#" role="button">Android</a> 
                     <a class="btn btn-embossed btn-info" href="#" role="button">iOS</a></p>
+-->
                 </div>
             </div>
         </div>
