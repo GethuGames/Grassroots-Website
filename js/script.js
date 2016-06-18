@@ -139,7 +139,7 @@ $(document).ready(function() {
 
     // OwlCarousel N1
     $("#owl-demo").owlCarousel({
-        autoPlay: 3000,
+        autoPlay: 30000,
         items : 4,
         itemsDesktop : [1199,3],
         itemsDesktopSmall : [979,3]
@@ -176,6 +176,7 @@ $(document).ready(function() {
         }
     });
     
+/*
     //Subscribe
     new UIMorphingButton( document.querySelectorAll( '.morph-button' )[0] );
     new UIMorphingButton( document.querySelectorAll( '.morph-button' )[1] );
@@ -183,6 +184,7 @@ $(document).ready(function() {
     [].slice.call( document.querySelectorAll( 'form button' ) ).forEach( function( bttn ) { 
         bttn.addEventListener( 'click', function( ev ) { ev.preventDefault(); } );
     } );
+*/
 
 });
 

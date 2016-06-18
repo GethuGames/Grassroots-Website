@@ -2,76 +2,161 @@
  * Grid Style - Start
  */
 .logoGrid {
-  display: flex;
-  flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .logoGrid a {
-  display: inline-block;
-  margin-bottom: 8px;
-  width: calc(50% - 4px);
-  margin-right: 8px;
-  text-decoration: none;
-  color: black;
+	display: inline-block;
+	margin-bottom: 8px;
+	width: calc(50% - 4px);
+	margin-right: 8px;
+	text-decoration: none;
+	color: black;
 }
 
 .logoGrid a:nth-of-type(2n) {
-  margin-right: 0;
+	margin-right: 0;
 }
 
 @media screen and (min-width: 50em) {
-  .logoGrid a {
-    width: calc(25% - 6px);
-  }
-  
-  .logoGrid a:nth-of-type(2n) {
-    margin-right: 8px;
-  }
-  
-  .logoGrid a:nth-of-type(4n) {
-    margin-right: 0;
-  }
+	.logoGrid a {
+		width: calc(25% - 6px);
+	}
+
+	.logoGrid a:nth-of-type(2n) {
+		margin-right: 8px;
+	}
+
+	.logoGrid a:nth-of-type(4n) {
+		margin-right: 0;
+	}
 }
 
 .logoGrid a:hover img {
-  transform: scale(1.15);
+	transform: scale(1.15);
 }
 
 .logoGrid figure {
-  margin: 0;
-  overflow: hidden;
-  text-align: center;
+	margin: 0;
+	overflow: hidden;
+	text-align: center;
 }
 
 .logoGrid figcaption {
-  margin-top: 15px;
-  text-align: center;
+	margin-top: 15px;
+	text-align: center;
 }
 
 .logoGrid img {
-  border: none;
-  max-width: 100%;
-  height: auto;
-  display: block;
-  background: #ccc;
-  transition: transform .2s ease-in-out;
-  text-align: center;
-  margin: auto;
+	border: none;
+	max-width: 100%;
+	height: auto;
+	display: block;
+	background: #ccc;
+	transition: transform .2s ease-in-out;
+	text-align: center;
+	margin: auto;
 }
 
 .logoGrid .p a {
-  display: inline;
-  font-size: 13px;
-  margin: 0;
-  text-decoration: underline;
-  color: blue;
+	display: inline;
+	font-size: 13px;
+	margin: 0;
+	text-decoration: underline;
+	color: blue;
 }
 
 .logoGrid .p {
-  text-align: center;
-  font-size: 13px;
-  padding-top: 100px;
+	text-align: center;
+	font-size: 13px;
+	padding-top: 100px;
 }
 /**
  * Grid Style - End
+ */
+
+
+/**
+ * Timeline Style - Start
+ */
+
+.timeline-both-side{
+	float: left; 
+	width: 96%; 
+	margin: 20px 2% 50px; 
+	position: relative; 
+	box-sizing: border-box;
+}
+.timeline-both-side:before{
+	background-color: #ccc; 
+	bottom: 0; 
+	content: " "; 
+	left: 53.5%; 
+	position: absolute; 
+	top: 0; 
+	width: 2px;
+}
+.timeline-both-side:after{
+	border-radius: 50%; 
+	bottom: -22px; 
+	content: ""; 
+	height: 18px; 
+	left: 54%; 
+	margin-left: -11px; 
+	position: absolute; 
+	width: 18px; 
+	border: 2px solid #ccc;
+}
+.timeline-both-side li {
+	position: relative; 
+	float: left; 
+	width: 100%;
+}
+.timeline-both-side li .border-line{
+	background-color: #ccc; 
+	font-size: 1.4em; 
+	height: 1px; 
+	left: 50%; 
+	margin-left: -8%; 
+	position: absolute; 
+	text-align: center; 
+	top: 50%; 
+	width: 8%; 
+	z-index: 100;
+}
+.timeline-both-side li.opposite-side .border-line{
+	left: auto; 
+	right: 50%; 
+	margin-left: 0; 
+	margin-right: -8%;
+}
+.timeline-both-side li .border-line:before {
+	background-color: #ccc; 
+	content: ""; 
+	height: 7px; 
+	position: absolute; 
+	right: -4px; 
+	top: -3px; 
+	width: 7px;
+}
+.timeline-both-side li.opposite-side .border-line:before{
+	left: -4px; 
+	right: auto;
+}
+.timeline-both-side li .timeline-description{
+	border-radius: 2px; 
+	border: 1px solid #ccc; 
+	float: left; 
+	font-size: 13px; 
+	padding: 10px; 
+	position: relative; 
+	width: 42%;
+}
+.timeline-both-side li.opposite-side .timeline-description{
+	float: right;
+}
+
+/**
+ * Timeline Style - End
  */
