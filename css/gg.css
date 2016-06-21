@@ -166,6 +166,22 @@
  * Pricing
  */
 
+
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.cd-pricing-container {
+	font-family: "Open Sans", sans-serif;
+	line-height: 16px;
+}
 .cd-header {
   height: 100px;
   line-height: 170px;
@@ -185,6 +201,10 @@
     font-size: 3.6rem;
     font-weight: 300;
   }
+
+	.cd-price {
+		margin-top: 24px;
+	}
 }
 
 .cd-pricing-container {
@@ -320,17 +340,19 @@
 }
 .cd-pricing-header {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   height: 80px;
   padding: 1em;
   pointer-events: none;
   background-color: #3aa0d1;
   color: #FFFFFF;
+  	line-height: 16px;
 }
 .cd-pricing-header h2 {
   margin-bottom: 3px;
   font-weight: 700;
   text-transform: uppercase;
+	margin-top:0px;
 }
 .cd-popular .cd-pricing-header {
   background-color: #e97d68;
@@ -419,6 +441,7 @@
 
 .cd-pricing-features {
   width: 600px;
+	padding-left: 0px;
 }
 .cd-pricing-features:after {
   content: "";
@@ -439,6 +462,7 @@
   display: block;
   margin-bottom: 5px;
   font-weight: 600;
+	font-style: normal;
 }
 @media only screen and (min-width: 768px) {
   .cd-pricing-features {
