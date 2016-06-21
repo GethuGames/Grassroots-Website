@@ -20,6 +20,7 @@
 	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 
 	<!-- Custom CSS-->
 	<link href="css/general.css" rel="stylesheet">
@@ -98,8 +99,8 @@
 					<li class="menuItem"><a href="#whatis">What is?</a></li>
 					<li class="menuItem"><a href="#ngoPanel">NGO Panel</a></li>
 					<li class="menuItem"><a href="#registration">Registration</a></li>
-					<!--<li class="menuItem"><a href="#subscription">Subscription</a></li>
-					<li class="menuItem"><a href="#download">Download</a></li>-->
+					<li class="menuItem"><a href="#subscription">Subscription</a></li>
+					<!--<li class="menuItem"><a href="#download">Download</a></li>-->
 					<li class="menuItem"><a href="#contact">Contact</a></li>
 				</ul>
 			</div>
@@ -523,10 +524,10 @@
 		</div>
 	</div>
 
-	<div id="sponsors" class="content-section-c ">
+	<div id="sponsors" class="content-section-a ">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 col-md-offset-3 text-center white">
+				<div class="col-md-6 col-md-offset-3 text-center">
 					<h2>Sponsors</h2>
 					<p class="lead" style="margin-top:0">Will be updated soon</p>
 				</div>
@@ -537,23 +538,105 @@
 			</div>>
 		</div>
 	</div>
+    
+    <!-- Credits -->
+    <div id="subscription" class="content-section-c">
+        <div class="container">
+            <div class="row">
 
-	<!-- Credits -->
-	<!--
-	 <div id="subscription" class="content-section-a">
-	 <div class="container">
-	 <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center wrap_title white">
+                    <h2>NGO Subscription</h2>
+                </div>
 
-	 <div class="col-md-6 col-md-offset-3 text-center wrap_title">
-	 <h2>NGO Subscription</h2>
-	 <p class="lead" style="margin-top:0">Will be updated soon</p>
-	 </div>
+            </div>
 
-	 </div>
+        </div>
 
-	 </div>
-	 </div>
-	-->
+				<div class="cd-pricing-container cd-has-margins">
+					<ul class="cd-pricing-list" style='padding-left: 0px;'>
+
+						<li>
+							<header class="cd-pricing-header">
+								<h2>Basic</h2>
+
+								<div class="cd-price">
+									<span class="cd-currency">$</span>
+									<span class="cd-value">30</span>
+									<span class="cd-duration">mo</span>
+								</div>
+							</header> <!-- .cd-pricing-header -->
+
+							<div class="cd-pricing-body">
+								<ul class="cd-pricing-features">
+									<li><em>256MB</em> Memory</li>
+									<li><em>1</em> User</li>
+									<li><em>1</em> Website</li>
+									<li><em>1</em> Domain</li>
+									<li><em>Unlimited</em> Bandwidth</li>
+									<li><em>24/7</em> Support</li>
+								</ul>
+							</div> <!-- .cd-pricing-body -->
+
+							<footer class="cd-pricing-footer">
+								<a class="cd-select" href="http://codyhouse.co/?p=429">Select</a>
+							</footer> <!-- .cd-pricing-footer -->
+						</li>
+
+						<li class="cd-popular">
+							<header class="cd-pricing-header">
+								<h2>Popular</h2>
+
+								<div class="cd-price">
+									<span class="cd-currency">$</span>
+									<span class="cd-value">60</span>
+									<span class="cd-duration">mo</span>
+								</div>
+							</header> <!-- .cd-pricing-header -->
+
+							<div class="cd-pricing-body">
+								<ul class="cd-pricing-features">
+									<li><em>512MB</em> Memory</li>
+									<li><em>3</em> Users</li>
+									<li><em>5</em> Websites</li>
+									<li><em>7</em> Domains</li>
+									<li><em>Unlimited</em> Bandwidth</li>
+									<li><em>24/7</em> Support</li>
+								</ul>
+							</div> <!-- .cd-pricing-body -->
+
+							<footer class="cd-pricing-footer">
+								<a class="cd-select" href="http://codyhouse.co/?p=429">Select</a>
+							</footer> <!-- .cd-pricing-footer -->
+						</li>
+						<li>
+							<header class="cd-pricing-header">
+								<h2>Premier</h2>
+
+								<div class="cd-price">
+									<span class="cd-currency">$</span>
+									<span class="cd-value">90</span>
+									<span class="cd-duration">mo</span>
+								</div>
+							</header> <!-- .cd-pricing-header -->
+
+							<div class="cd-pricing-body">
+								<ul class="cd-pricing-features">
+									<li><em>1024MB</em> Memory</li>
+									<li><em>5</em> Users</li>
+									<li><em>10</em> Websites</li>
+									<li><em>10</em> Domains</li>
+									<li><em>Unlimited</em> Bandwidth</li>
+									<li><em>24/7</em> Support</li>
+								</ul>
+							</div> <!-- .cd-pricing-body -->
+
+							<footer class="cd-pricing-footer">
+								<a class="cd-select" href="http://codyhouse.co/?p=429">Select</a>
+							</footer>  <!-- .cd-pricing-footer -->
+						</li>
+					</ul> <!-- .cd-pricing-list -->
+				</div> <!-- .cd-pricing-container -->
+    </div>
 
 	<!-- Banner Download -->
 <!--
@@ -695,12 +778,37 @@
 	<!-- StikyMenu -->
 	<script src="js/stickUp.min.js"></script>
 	<script type="text/javascript">
-jQuery(function($) {
-	$(document).ready( function() {
-		$('.navbar-default').stickUp();
+		jQuery(function($) {
+			$(document).ready( function() {
+				$('.navbar-default').stickUp();
 
-	});
-});
+				//hide the subtle gradient layer (.cd-pricing-list > li::after) when pricing table has been scrolled to the end (mobile version only)
+				checkScrolling($('.cd-pricing-body'));
+				$(window).on('resize', function(){
+					window.requestAnimationFrame(function(){checkScrolling($('.cd-pricing-body'))});
+				});
+
+				$('.cd-pricing-body').on('scroll', function(){ 
+					var selected = $(this);
+					window.requestAnimationFrame(function(){checkScrolling(selected)});
+				});
+
+				function checkScrolling(tables){
+					tables.each(function(){
+						var table= $(this),
+							totalTableWidth = parseInt(table.children('.cd-pricing-features').width()),
+							tableViewport = parseInt(table.width());
+						console.log(table.scrollLeft() - totalTableWidth + tableViewport)
+						if( table.scrollLeft() >= totalTableWidth - tableViewport - 1) {
+							table.parent('li').addClass('is-ended');
+						} else {
+							table.parent('li').removeClass('is-ended');
+						}
+					});
+				}
+
+			});
+		});
 
 	</script>
 	<!-- Smoothscroll -->
