@@ -141,8 +141,9 @@ $(document).ready(function() {
     $("#owl-demo").owlCarousel({
         autoPlay: 30000,
         items : 3,
-        itemsDesktop : [1199,3],
-        itemsDesktopSmall : [979,3]
+        itemsDesktop : [1199,2],
+        itemsDesktopSmall : [979,2],
+        itemsTablet: [768,1]
     });
 
     // OwlCarousel N2
