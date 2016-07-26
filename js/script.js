@@ -130,34 +130,38 @@ $(document).ready(function() {
 
     // OwlCarousel N1
     $("#owl-demo-ngo").owlCarousel({
-        autoPlay: 3000,
-        items : 4,
-        itemsDesktop : [1199,3],
-        itemsDesktopSmall : [979,3]
+        autoPlay                :   3000,
+        lazyLoad                :   true,
+        items                   :   4,
+        itemsDesktop            :   [1199,3],
+        itemsDesktopSmall       :   [979,3]
     });
 
 
     // OwlCarousel N1
     $("#owl-demo").owlCarousel({
-        autoPlay: 30000,
-        items : 3,
-        itemsDesktop : [1199,2],
-        itemsDesktopSmall : [979,2],
-        itemsTablet: [768,1]
+        autoPlay                :   30000,
+        lazyLoad                :   true,
+        items                   :   3,
+        itemsDesktop            :   [1199,2],
+        itemsDesktopSmall       :   [979,2],
+        itemsTablet             :   [768,1]
     });
 
     // OwlCarousel N2
     $("#owl-demo-a").owlCarousel({
-          items: 1,
-          singleItem:true
+        lazyLoad                :   true,
+        items                   :   1,
+        singleItem              :   true
     });
 
     // OwlCarousel N3
     $("#owl-demo-2").owlCarousel({
-          navigation : false, // Show next and prev buttons
-          slideSpeed : 300,
-          paginationSpeed : 400,
-          singleItem:true
+        lazyLoad                :   true,
+        navigation              :   false, // Show next and prev buttons
+        slideSpeed              :   300,
+        paginationSpeed         :   400,
+        singleItem              :   true
     });
 
 
